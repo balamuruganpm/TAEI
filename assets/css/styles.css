@@ -11,24 +11,24 @@
  }
 
  .top-header {
-     background-color: #f8f9fa;
+     background-color: #0063c7;
      padding: 10px 0;
      font-size: 14px;
+     color: #fff;
  }
 
  .top-header i {
-     color: var(--primary-color);
      margin-right: 5px;
  }
 
  .social-links a {
-     color: var(--secondary-color);
+     color: #fff;
      margin-left: 15px;
      transition: color 0.3s;
  }
 
  .social-links a:hover {
-     color: var(--primary-color);
+     color: #c7c7c7;
  }
 
  .navbar {
@@ -49,10 +49,17 @@
      font-weight: 600 !important;
      color: #000000 !important;
      font-weight: 500;
- } 
+ }
 
  .mega-menu {
      position: absolute;
+     display: none;
+     position: absolute;
+     top: 90%;
+     width: 100%;
+     background: #fff;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+     padding: 20px 0;
      width: 100%;
      left: 0;
      right: 0;
@@ -69,7 +76,7 @@
 
  .mega-menu h3 {
      font-size: 18px;
-     color: var(--primary-color);
+     color: black;
      margin-bottom: 10px;
  }
 
@@ -101,9 +108,9 @@
      padding: 15px;
  }
 
-.logo-txt {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 0.4rem;
+ .logo-txt {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 0.4rem;
  }
 
  nav a .logo {
@@ -133,9 +140,61 @@
 
  .bi-chevron-down {
      font-size: 0.8rem;
-}
+ }
 
+ .dropdown:hover .mega-menu {
+     display: block;
+ }
 
+ .featured-section {
+     text-align: center;
+     padding: 20px;
+     background-color: #f8f9fa;
+     border-radius: 8px;
+ }
+
+ .featured-section a {
+     text-decoration: none;
+     font-weight: bold;
+     color: #ffffff;
+ }
+
+ .mega-menu .row {
+     margin: 0;
+ }
+
+ .mega-menu h5 {
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ .mega-menu ul {
+     padding-left: 0;
+ }
+
+ .mega-menu ul li a {
+     display: block;
+     padding: 8px;
+     color: #555;
+     text-decoration: none;
+ }
+
+ .mega-menu ul li a:hover {
+     color: #007bff;
+     background-color: #f1f1f1;
+ }
+
+ /* Mobile-friendly */
+ @media (max-width: 768px) {
+     .navbar-nav {
+         text-align: center;
+     }
+
+     .mega-menu {
+         position: static;
+         box-shadow: none;
+     }
+ }
 
  /* General Footer Styles */
  #mu-footer {
@@ -227,12 +286,252 @@
      color: #f76c6c;
  }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature {
+     display: inline;
+     float: left;
+     margin-bottom: 30px;
+     margin-top: 30px;
+     padding: 0 10px;
+     width: 100%;
+ }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
+     font-size: 25px;
+     padding: 10px 15px;
+ }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature h4 {
+     margin-bottom: 15px;
+     margin-top: 15px;
+     padding-bottom: 10px;
+     position: relative;
+ }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature h4:after {
+     /* background-color: #333; */
+     content: '';
+     left: 0;
+     right: 0;
+     bottom: 0;
+     height: 2px;
+     width: 70px;
+     position: absolute;
+ }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature p {
+     font-size: 15px;
+     letter-spacing: 0.3px;
+     line-height: 1.7;
+ }
 
+ #mu-features .mu-features-area .mu-features-content .mu-single-feature a {
+     /* border: 1px solid #888; */
+     display: inline-block;
+     font-size: 14px;
+     margin-top: 10px;
+     padding: 5px 10px;
+     text-transform: uppercase;
+     -webkit-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+     -ms-transition: all 0.5s;
+     -o-transition: all 0.5s;
+     transition: all 0.5s;
+ }
 
+ .mu-features-content span {
+     color: #05a8ed;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ .mu-features-content h4 {
+     font-size: 1.5rem;
+     font-weight: 700;
+     color: #053f7e;
+ }
+
+ /*==================
+ ABOUT US COUNTER SECTION
+====================*/
+ #mu-abtus-counter {
+     position: relative;
+     padding: 100px 0;
+     width: 100%;
+ }
+
+ #mu-abtus-counter::before {
+     content: "";
+     background-image: url("../img/slider/slider1-min.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     opacity: 0.4;
+     /* Adjust the opacity here */
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     /* Keeps the background behind the content */
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area {
+     display: inline;
+     float: left;
+     width: 100%;
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single {
+     border-right: 2px solid #204875;
+     display: inline;
+     float: left;
+     text-align: center;
+     width: 100%;
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single span {
+     color: #154af7;
+     display: inline-block;
+     font-size: 50px;
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single h4 {
+     color: #000a44;
+     font-size: 40px;
+     font-weight: bold;
+     margin-bottom: 5px;
+     margin-top: 20px;
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area .mu-abtus-counter-single p {
+     color: #000a44;
+     font-size: 18px;
+     text-transform: uppercase;
+ }
+
+ #mu-abtus-counter .mu-abtus-counter-area .no-border {
+     border: none;
+ }
+
+ /*  */
+ .course-carousel-wrapper {
+     padding: 20px;
+ }
+
+ .course-card {
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     background-color: #fff;
+     margin: 0 15px;
+ }
+
+ .course-card-image img {
+     width: 100%;
+     height: auto;
+ }
+
+ .course-card-caption {
+     position: absolute;
+     top: 10px;
+     left: 10px;
+     background: rgba(0, 0, 0, 0.6);
+     color: #fff;
+     padding: 5px 10px;
+     border-radius: 5px;
+ }
+
+ .course-card-content {
+     padding: 15px;
+ }
+
+ .course-card-content h4 {
+     font-size: 1.2rem;
+ }
+
+ .course-card-content p {
+     font-size: 0.9rem;
+     color: #555;
+ }
+
+ .course-card-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ .course-details-link {
+     text-decoration: none;
+     color: #007bff;
+     font-weight: bold;
+ }
+
+ .course-price {
+     font-weight: bold;
+     color: #28a745;
+ }
+
+ .carousel-inner {
+     padding: 20px;
+ }
+
+ .carousel-indicators button {
+     background-color: #007bff;
+     /* Default color for dots */
+     border-radius: 50%;
+     /* Make dots circular */
+     width: 12px;
+     height: 12px;
+ }
+
+ .carousel-indicators .active {
+     background-color: #ff5722;
+     /* Color of active dot */
+ }
+
+ /* Optional: Hover Effect on Dot Indicators */
+ .carousel-indicators button:hover {
+     background-color: #ff5722;
+     /* Color when hovered */
+ }
+
+ /* Ensure each card takes full width on smaller screens */
+ @media (max-width: 768px) {
+     .carousel-item .row {
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .carousel-item .card {
+         width: 100%;
+     }
+ }
+
+ /* Show 3 items on desktop */
+ @media (min-width: 992px) {
+     .carousel-item .col-md-4 {
+         flex: 1 1 33%;
+         /* 3 items per row */
+     }
+ }
+
+ /* Show 2 items on tablet */
+ @media (min-width: 768px) and (max-width: 991px) {
+     .carousel-item .col-md-4 {
+         flex: 1 1 50%;
+         /* 2 items per row */
+     }
+ }
+
+ /* Show 1 item on mobile */
+ @media (max-width: 767px) {
+     .carousel-item .col-md-4 {
+         flex: 1 1 100%;
+         /* 1 item per row */
+     }
+ }
 
  /* General Footer Styles */
  #mu-footer {
