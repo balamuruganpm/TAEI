@@ -80,7 +80,6 @@ section .page{
     display: flex !important;
     width: 100% !important;
     /* background-color: yellow; */
-
 }
 .left.con{
     width: 50% !important;
