@@ -1,0 +1,106 @@
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+        }
+
+        .top-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .top-header i {
+            color: var(--primary-color);
+            margin-right: 5px;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar-nav .nav-item {
+            position: static;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 20px 15px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .mega-menu {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            z-index: 1000;
+            display: none;
+        }
+
+        .navbar-nav .nav-item:hover .mega-menu {
+            display: block;
+        }
+
+        .mega-menu h3 {
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .mega-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mega-menu ul li {
+            padding: 5px 0;
+        }
+
+        .mega-menu ul li a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .mega-menu ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .featured-section {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-item {
+                position: relative;
+            }
+
+            .mega-menu {
+                position: static;
+                box-shadow: none;
+                padding: 0 15px;
+            }
+
+            .navbar-nav .nav-item:hover .mega-menu {
+                display: none;
+            }
+
+            .navbar-nav .nav-item.show .mega-menu {
+                display: block;
+            }
+        }

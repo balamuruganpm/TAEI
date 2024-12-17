@@ -247,3 +247,19 @@ jQuery(function($){
 
 });
 
+// my code da
+ // JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            var navItems = document.querySelectorAll('.navbar-nav .nav-item');
+
+            navItems.forEach(function (item) {
+                item.addEventListener('click', function (e) {
+                    if (window.innerWidth < 992) {
+                        if (this.querySelector('.mega-menu')) {
+                            e.preventDefault();
+                            this.classList.toggle('show');
+                        }
+                    }
+                });
+            });
+        });
