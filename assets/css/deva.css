@@ -1,0 +1,33 @@
+:root{
+    --primary : #303890 ;
+    --secondary : #00aeef; 
+    --heading : 8rem;
+    --subheadiung : 6rem ;
+    --darkbg-color : #343a40;
+}
+.nav-link:hover{
+    color: var(--secondary) !important;
+    border-bottom-color: var(--secondary) !important;
+}
+
+.active{
+    color: var(--secondary) !important;
+    /* background-color: red; */
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #00aeef !important;
+    filter: none !important;
+    padding: 35px 20px; 
+    
+    opacity: 70%;
+}
+
+@media (max-width: 767px) {
+.carousel-item img{
+    width:225% !important;
+    margin-left: -200px;
+}
+
+}
