@@ -6,9 +6,8 @@
 
  /* ff871c color idea */
 
- a{
-    text-decoration: none;
-    color: #ff871c;
+ a {
+     text-decoration: none;
  }
 
  .top-header {
@@ -41,14 +40,14 @@
  }
 
  .nav-item a {
-    padding-right: 20px !important;
+     padding-right: 20px !important;
  }
 
  .navbar-nav .nav-link {
      padding: 20px 15px;
-     font-size:medium;
+     font-size: medium;
      font-weight: 600 !important;
-        color: #000000 !important;
+     color: #000000 !important;
      font-weight: 500;
  }
 
@@ -88,8 +87,8 @@
      text-decoration: none;
      transition: color 0.3s;
      border-left: 3px solid #1c7eff;
-        padding-left: 5px;
-        /* margin-left: 10px; */
+     padding-left: 5px;
+     /* margin-left: 10px; */
  }
 
  .mega-menu ul li a:hover {
@@ -102,33 +101,289 @@
      padding: 15px;
  }
 
-nav a .logo {
-    width: 80px;
-}
+ nav a .logo {
+     width: 80px;
+ }
 
-.nested-menu {
-    list-style: none;
-    padding-left: 15px;
-    display: none;
-    /* Hidden by default */
-}
+ .nested-menu {
+     list-style: none;
+     padding-left: 15px;
+     display: none;
+     /* Hidden by default */
+ }
 
-.nested-menu li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 0.9rem;
-    border-left: 3px solid #ff871c !important;
-    padding-left: 5px !important;
-    margin-left: 10px !important;
-}
+ .nested-menu li a {
+     text-decoration: none;
+     color: #333;
+     font-size: 0.9rem;
+     border-left: 3px solid #ff871c !important;
+     padding-left: 5px !important;
+     margin-left: 10px !important;
+ }
 
-.nav-item ul li:hover>.nested-menu {
-    display: block;
-    /* Show when parent item is hovered */
-}
-.bi-chevron-down {
-    font-size: 0.8rem;
-}
+ .nav-item ul li:hover>.nested-menu {
+     display: block;
+     /* Show when parent item is hovered */
+ }
+
+ .bi-chevron-down {
+     font-size: 0.8rem;
+ }
+
+ /* General Footer Styles */
+ #mu-footer {
+     background-color: #1d1d1d;
+     color: #fff;
+     padding: 40px 0;
+ }
+
+ #mu-footer h4 {
+     color: #fff;
+     margin-bottom: 20px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ #mu-footer .mu-footer-links {
+     list-style: none;
+     padding-left: 0;
+ }
+
+ #mu-footer .mu-footer-links li {
+     margin-bottom: 10px;
+ }
+
+ #mu-footer .mu-footer-links a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px;
+     transition: color 0.3s ease;
+ }
+
+ #mu-footer .mu-footer-links a:hover {
+     color: #f76c6c;
+ }
+
+ /* Footer Social Media */
+ .mu-footer-social a {
+     font-size: 18px;
+     color: #fff;
+     margin: 0 10px;
+     transition: color 0.3s ease;
+ }
+
+ .mu-footer-social a:hover {
+     color: #f76c6c;
+ }
+
+ /* Newsletter Form */
+ .mu-footer-newsletter input {
+     padding: 10px;
+     width: 75%;
+     border: none;
+     border-radius: 20px;
+     margin-right: 10px;
+ }
+
+ .mu-footer-newsletter button {
+     padding: 10px 20px;
+     background-color: #f76c6c;
+     border: none;
+     color: #fff;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ .mu-footer-newsletter button:hover {
+     background-color: #ff5252;
+ }
+
+ /* Footer Bottom */
+ #mu-footer .mu-footer-bottom {
+     background-color: #000;
+     color: #fff;
+     padding: 20px 0;
+ }
+
+ #mu-footer .mu-footer-bottom p {
+     margin: 0;
+     font-size: 14px;
+     text-align: center;
+ }
+
+ #mu-footer .mu-footer-bottom a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ #mu-footer .mu-footer-bottom a:hover {
+     color: #f76c6c;
+ }
+
+
+
+
+
+
+
+
+ /* General Footer Styles */
+ #mu-footer {
+     background-color: #343a40;
+     color: #fff;
+     /* padding: 40px 0; */
+ }
+
+ #mu-footer h4 {
+     color: #ffffff;
+     margin-bottom: 20px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ #mu-footer .mu-footer-links {
+     list-style: none;
+     padding-left: 0;
+     margin-bottom: 0;
+ }
+
+ #mu-footer .mu-footer-links li {
+     margin-bottom: 10px;
+ }
+
+ #mu-footer .mu-footer-links a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 16px;
+     transition: color 0.3s ease;
+ }
+
+ #mu-footer .mu-footer-links a:hover {
+     color: #d3d5df;
+ }
+
+ /* Footer Social Media */
+ .mu-footer-social a {
+     font-size: 18px;
+     color: #fff;
+     margin: 0 10px;
+     transition: color 0.3s ease;
+ }
+
+ .mu-footer-social a:hover {
+     color: #0626dd;
+ }
+
+ /* Footer Bottom */
+ #mu-footer .mu-footer-bottom {
+     /* background-color: #000; */
+     color: #fff;
+     padding: 20px 0;
+ }
+
+ #mu-footer .mu-footer-bottom p {
+     margin: 0;
+     font-size: 14px;
+     text-align: center;
+ }
+
+ #mu-footer .mu-footer-bottom a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ #mu-footer .mu-footer-bottom a:hover {
+     color: #0626dd;
+ }
+
+ /* Form Styles for Newsletter */
+ .mu-footer-newsletter {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     /* gap: 10px; */
+     align-items: center;
+ }
+
+ .mu-footer-newsletter input {
+     padding: 10px;
+     width: 100%;
+     border: none;
+     border-radius: 2px;
+     margin: 0px;
+ }
+
+ .mu-footer-newsletter button {
+     margin: 0px;
+     padding: 13px;
+     background-color: #002dc0;
+     border: none;
+     color: #fff;
+     border-radius: 12px;
+     cursor: pointer;
+ }
+
+ .mu-footer-newsletter button:hover {
+     background-color: #001653;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 1199px) {
+
+     /* On large screens (tablets or smaller), columns will stack */
+     .mu-footer-widget {
+         text-align: start;
+     }
+
+     .mu-footer-newsletter input {
+         width: 100%;
+     }
+
+     .mu-footer-newsletter button {
+         width: 100%;
+         margin-top: 10px;
+     }
+ }
+
+ @media (max-width: 991px) {
+
+     /* On medium-sized screens (tablets), adjust footer sections to stack */
+     .mu-footer-area .row {
+         flex-direction: column;
+     }
+
+     .mu-footer-widget {
+         margin-bottom: 30px;
+         /* Space between stacked sections */
+     }
+
+     .mu-footer-newsletter input {
+         width: 100%;
+     }
+ }
+
+ @media (max-width: 767px) {
+
+     /* On mobile screens (phones), make the layout even more compact */
+     #mu-footer {
+         padding: 30px 0;
+     }
+
+     .mu-footer-widget h4 {
+         font-size: 18px;
+         /* Slightly smaller heading on mobile */
+     }
+
+     .mu-footer-newsletter input {
+         width: 100%;
+         margin-bottom: 10px;
+         /* Space between input and button */
+     }
+
+     .mu-footer-newsletter button {
+         width: 100%;
+     }
+ }
 
  /* responsive */
  @media (max-width: 991.98px) {
