@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+:root{
+    --primary : #303890 ;
+    --secondary : #00aeef; 
+    --heading : 8rem;
+    --subheadiung : 1.4rem ;
+    --darkbg-color : #343a40;
+    --normal-size: 1rem
+    
+}
+.nav-link:hover{
+    color: var(--secondary) !important;
+    border-bottom-color: var(--secondary) !important;
+}
+
+.active{
+    color: var(--secondary) !important;
+    /* background-color: red; */
+
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #00aeef !important;
+    filter: none !important;
+    padding: 35px 20px; 
+    
+    opacity: 70%;
+}
+.textAA{
+    text-transform: uppercase !important;
+}
+.textAa{
+    text-transform: capitalize !important;
+}
+.textaa{
+    text-transform: lowercase !important;
+}
+section .page{
+    padding: 5rem 2rem;
+}
+.small-head{
+     text-decoration: underline;
+     font-size: var(--subheadiung) !important;
+     color: var(--primary);
+}
+.w-50{
+    width:  50% !important;
+    border-radius: 1rem;
+ }
+@media (max-width: 767px) {
+.carousel-item img{
+    width:225% !important;
+    margin-left: -200px;
+}
+.eye{
+    flex-direction: column !important;
+}
+.w-50{
+    width: 100% !important;
+}
+}
+.center-x{
+    display: flex !important;
+    /* width: 100% !important; */
+
+    justify-content: center !important;
+}
+.center-x-y{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+}
+.eye{
+    display: flex !important;
+    width: 100% !important;
+    /* background-color: yellow; */
+
+}
+.left.con{
+    width: 50% !important;
+    margin: auto !important;
+    overflow-x: hidden !important;
+
+}
+.right.con{
+    width: 50% !important;
+}
+ .main-head{
+    font-weight: 600 !important;
+ }
+ .sub-head{
+    color: var(--secondary);
+    text-decoration: underline;
+    font-size: var(--normal-size);
+    font-weight: 600;
+ }
+.para{
+    line-height: 1.8rem !important;
+    text-align: justify;
+    /* text-indent: 1rem; */
+
+ }
